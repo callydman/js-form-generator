@@ -1,0 +1,27 @@
+input{
+    margin-right: 10px;
+    margin-left: 20px;
+    margin-bottom: 0px;
+    width:50%;
+}
+label{
+    padding-top:15px;
+    padding-left:20px;
+    font-weight: bold;
+
+}
+
+#error{
+    padding:20px;
+}
+
+
+@media screen and (max-width:800px) {
+    input{
+        width:80%;
+        margin:5px auto;
+    }
+    label{
+       padding-top:15px;
+    }
+}

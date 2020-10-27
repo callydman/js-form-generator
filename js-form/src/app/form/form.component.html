@@ -1,1 +1,10 @@
-<p>form works!</p>
+
+<form [formGroup]="form">
+    <app-input type="text" [control]="form.controls.name" label="What is the name of the officer in question?"></app-input>
+    <app-input type="date" [control]="form.controls.date" label="When was the date of the incident?"></app-input>
+    <app-input type="number" [control]="form.controls.bribeAmount" label="How much is the bribe that was paid?"></app-input>
+
+    <button type="submit" class="btn btn-primary" [disabled]="form.invalid">Submit</button>
+</form>
+
+<div>{{form.value | json}}</div>
