@@ -16,12 +16,23 @@ export class FormComponent implements OnInit {
       Validators.required
     ]),
     bribeAmount: new FormControl('', [
-      Validators.required
+      Validators.required,
+      Validators.pattern(/[0-9]+/)
     ])
   })
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  onSubmit(){
+    const name = this.form.controls.name.value
+    const date = this.form.controls.date.value
+    const bribeAmount = this.form.controls.bribeAmount.value
+  }
+
+  onResetClick() {
+    this.form.reset();
   }
 
 }
