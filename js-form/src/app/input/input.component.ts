@@ -16,4 +16,7 @@ export class InputComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  isinvalid() {
+    return this.control.errors
+  }
 }
