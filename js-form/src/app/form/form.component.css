@@ -1,0 +1,15 @@
+button{
+    padding:10px;
+    width:200px;
+    margin:10px auto;
+    margin-left: 50px;
+    
+}
+
+
+@media screen and(max-width:800px){
+    button{
+        width:50%;
+        margin:10px auto;
+    }
+}

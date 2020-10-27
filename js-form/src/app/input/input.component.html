@@ -1,0 +1,5 @@
+ <div><label>{{label}}</label></div>
+ <input class="form-control" [formControl]="control" [type]="type" />
+    <ng-container *ngIf="control.errors && control.dirty && control.touched">
+        <div id="error" class="text-danger" *ngIf="control.errors.required">Field is required!!!</div>
+    </ng-container>
