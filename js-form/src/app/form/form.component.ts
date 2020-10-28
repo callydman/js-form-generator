@@ -17,7 +17,7 @@ export class FormComponent implements OnInit {
     ]),
     bribeAmount: new FormControl('', [
       Validators.required,
-      Validators.pattern(/[0-9]+/)
+      Validators.pattern(/\d/)
     ])
   })
   constructor() { }
